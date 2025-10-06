@@ -9,9 +9,9 @@ import java.util.List;
 
 public class GestorBD {
 
-    private static final String URL = "jdbc:mariadb://localhost:3306/personadb";
-    private static final String USER = "root";
-    private static final String PASSWORD = "admin";
+    private static final String URL = "";
+    private static final String USER = "";
+    private static final String PASSWORD = "";
 
     private Connection conn;
 
