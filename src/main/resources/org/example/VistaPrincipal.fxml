@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.controller.ControladorPrincipal"
+      spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <!-- Fila 1: Nombre + campo + botón Add -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Nombre:"/>
+        <TextField fx:id="txtNombre" prefWidth="200"/>
+        <Button fx:id="btnAdd" text="Add" onAction="#onAdd" prefWidth="80"/>
+    </HBox>
+
+    <!-- Fila 2: Last name + campo -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Last name:"/>
+        <TextField fx:id="txtLastName" prefWidth="200"/>
+    </HBox>
+
+    <!-- Fila 3: Birth date + DatePicker -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Birth date:"/>
+        <DatePicker fx:id="datePicker" prefWidth="200"/>
+    </HBox>
+
+    <!-- Fila 4: botones Restore y Delete -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Button fx:id="btnRestore" text="Restore Row" onAction="#onRestore" prefWidth="120"/>
+        <Button fx:id="btnDelete" text="Delete Selected Rows" onAction="#onDelete" prefWidth="140"/>
+    </HBox>
+
+    <!-- TableView -->
+    <TableView fx:id="tableView" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="60"/>
+            <TableColumn fx:id="colNombre" text="Nombre" prefWidth="200"/>
+            <TableColumn fx:id="colLastName" text="Last name" prefWidth="200"/>
+            <TableColumn fx:id="colBirthDate" text="Birth date" prefWidth="180"/>
+        </columns>
+    </TableView>
+
+</VBox>
