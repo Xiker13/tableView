@@ -1,17 +1,16 @@
 package org.example.database;
 
-import model.Person;
+import org.example.model.Person;
 
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public class GestorBD {
 
-    private static final String URL = "";
-    private static final String USER = "";
-    private static final String PASSWORD = "";
+    private static final String URL = "jdbc:mariadb://localhost:3306/personadb";
+    private static final String USER = "root";
+    private static final String PASSWORD = "admin";
 
     private Connection conn;
 

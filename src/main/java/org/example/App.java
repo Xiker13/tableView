@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/VistaPrincipal.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("VistaPrincipal.fxml"));
         Scene scene = new Scene(loader.load());
         stage.setTitle("TableView Demo - MariaDB");
         stage.setScene(scene);

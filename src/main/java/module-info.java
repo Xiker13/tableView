@@ -5,8 +5,8 @@ module org.example {
 
     opens org.example to javafx.fxml;
     exports org.example;
-    exports model;
-    opens model to javafx.fxml;
+    exports org.example.model;
+    opens org.example.model to javafx.fxml;
     exports org.example.controller;
     opens org.example.controller to javafx.fxml;
 }
